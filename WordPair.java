@@ -1,15 +1,19 @@
 public class WordPair {
-    private String[] subset = new String[2];
+    private String[] set = new String[2];
     public WordPair(String first, String second) {
-        subset[0] = first;
-        subset[1] = second;
+        set[0] = first;
+        set[1] = second;
     }
 
     public String getFirst() {
-        return subset[0];
+        return set[0];
     }
 
     public String getSecond() {
-        return subset[1];
+        return set[1];
+    }
+
+    public String toString() {
+        return "(\"" + set[0] + "\", \"" + set[1] + "\")";
     }
 }
